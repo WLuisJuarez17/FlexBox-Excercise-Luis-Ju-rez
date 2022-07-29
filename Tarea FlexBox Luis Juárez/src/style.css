@@ -1,0 +1,246 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos*/
+.element{
+    width:25%;
+    background-color: black;
+    color: white;
+}
+
+p{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8, .container9, .container10, .container11, .container12, .container13, .container14, .container15, .container16, .container17, .container18, .container19, .container20, .container21, .container22, .container23, .container24, .container25, .container26{
+    border: solid;
+    border-color: red;
+    gap: 0.2rem;
+}
+
+/*Ejemplo 1*/
+.container1{
+    display:flex;
+    margin: 10px;
+}
+/*Ejemplo 2*/
+.container2{
+    display:flex;
+    flex-direction:row-reverse;
+    margin: 10px;
+}
+/*Ejemplo 3*/
+.container3{
+    display:flex;
+    flex-direction:column;
+    margin: 10px;
+}
+/*Ejemplo 4*/
+.container4{
+    display:flex;
+    flex-direction:column-reverse;
+    margin: 10px;
+}
+/*Ejemplo 5*/
+.container5{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+/*Ejemplo 6*/
+.container6{
+    display:flex;
+    flex-wrap: wrap-reverse;
+    margin: 10px;
+}
+/*Ejemplo 7*/
+.container7{
+    display:flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap-reverse;
+    margin: 10px;
+}
+/*Ejemplo 8*/
+.container8{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+}
+/*Ejemplo 9*/
+.container9{
+    display:flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+}
+/*Ejemplo 10*/
+.container10{
+    display:flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 10px;
+}
+/*Ejemplo 11*/
+.container11{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+/*Ejemplo 12*/
+.container12{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+/*Ejemplo 13*/
+.container13{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+/*Ejemplo 14*/
+.container14{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 15*/
+.container15{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 16*/
+.container16{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    align-items: flex-end;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 17*/
+.container17{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 18*/
+.container18{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    height: 240px;
+    margin: 10px;
+}
+
+.container18 .element {
+    line-height: 2rem;
+}
+.container18 .element:first-child{
+    line-height:4rem;
+    }
+    .container18 .element:nth-child(3){
+    font-size:1rem;
+    line-height:1.2rem;
+    }
+    .container18 .element:nth-child(6){
+    font-size:3rem;
+    line-height:5rem;
+    }
+    .container18 .element:last-child{
+    line-height:3rem;
+    }
+/*Ejemplo 19*/
+.container19 {
+    display:flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 20*/
+.container20 {
+    display:flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 21*/
+.container21 {
+    display:flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 22*/
+.container22 {
+    display:flex;
+    flex-flow: row wrap;
+    align-content: center;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 23*/
+.container23 {
+    display:flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 24*/
+.container24 {
+    display:flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    height: 240px;
+    margin: 10px;
+}
+/*Ejemplo 25*/
+.container25 {
+    display:flex;
+    margin: 10px;
+}
+.container25 .element:nth-child(even) {
+    width:25%;
+    background-color: black;
+    color: white;
+    order: 1;
+}
+/*Ejemplo 26*/
+.container26 {
+    display:flex;
+    margin: 10px;
+}
+.container26 .element {
+    flex: 1 1 0;
+}   
+.container26 .element:nth-child(4) {
+    flex-grow: 3;
+}
